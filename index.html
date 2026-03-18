@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TapLink — NFC Digital Visiting Card | Share Instantly</title>
+  <meta name="description" content="The premium NFC-powered digital visiting card. Share your contact info, socials, and portfolio with a single tap. No app required." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#" class="nav__logo">
+        <svg class="nav__logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="8" fill="url(#logo-grad)" />
+          <path d="M10 16C10 12.6863 12.6863 10 16 10V10C19.3137 10 22 12.6863 22 16V22H16C12.6863 22 10 19.3137 10 16V16Z" fill="white" fill-opacity="0.9"/>
+          <circle cx="16" cy="12" r="2" fill="white" fill-opacity="0.6"/>
+          <defs>
+            <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32">
+              <stop stop-color="#6366f1"/>
+              <stop offset="1" stop-color="#a855f7"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>TapLink</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#showcase">Showcase</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <a href="#pricing" class="nav__cta btn btn--sm">Order Now</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#showcase">Showcase</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#pricing" class="btn btn--primary">Order Now</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="hero">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__glow hero__glow--1"></div>
+    <div class="hero__glow hero__glow--2"></div>
+    <div class="hero__container">
+      <div class="hero__content" data-animate="fade-up">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Next-Gen Networking
+        </div>
+        <h1 class="hero__title">
+          Your Identity.<br />
+          <span class="gradient-text">One Tap Away.</span>
+        </h1>
+        <p class="hero__subtitle">
+          The premium NFC-powered digital visiting card that lets you share your
+          contact info, social profiles, and portfolio instantly. No app needed —
+          just tap and connect.
+        </p>
+        <div class="hero__actions">
+          <a href="#pricing" class="btn btn--primary btn--lg">
+            Get Your Card
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#how-it-works" class="btn btn--ghost btn--lg">
+            See How It Works
+          </a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <strong>50K+</strong>
+            <span>Cards Shipped</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <strong>4.9</strong>
+            <span>Star Rating</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <strong>0s</strong>
+            <span>Setup Time</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual" data-animate="fade-up" data-delay="200">
+        <div class="hero__card-scene">
+          <div class="hero__card hero__card--front">
+            <div class="hero__card-inner">
+              <div class="hero__card-chip">
+                <svg viewBox="0 0 48 36" fill="none">
+                  <rect x="1" y="1" width="46" height="34" rx="5" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+                  <rect x="8" y="8" width="14" height="10" rx="2" fill="rgba(255,255,255,0.15)"/>
+                  <rect x="8" y="20" width="14" height="8" rx="2" fill="rgba(255,255,255,0.1)"/>
+                  <line x1="15" y1="8" x2="15" y2="28" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                  <line x1="8" y1="14" x2="22" y2="14" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                </svg>
+              </div>
+              <div class="hero__card-nfc">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M6 18C3.79 15.79 3.79 12.21 6 10" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M9 15C7.9 13.9 7.9 12.1 9 11" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M12 13C11.45 12.45 11.45 11.55 12 11" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="hero__card-content">
+                <span class="hero__card-name">Alex Morgan</span>
+                <span class="hero__card-title">Product Designer</span>
+              </div>
+              <div class="hero__card-logo">TapLink</div>
+            </div>
+          </div>
+          <div class="hero__card-ring hero__card-ring--1"></div>
+          <div class="hero__card-ring hero__card-ring--2"></div>
+          <div class="hero__card-ring hero__card-ring--3"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== TRUSTED BY ===== -->
+  <section class="trusted">
+    <div class="trusted__container" data-animate="fade-up">
+      <p class="trusted__label">Trusted by professionals at</p>
+      <div class="trusted__logos">
+        <span class="trusted__logo">Google</span>
+        <span class="trusted__logo">Meta</span>
+        <span class="trusted__logo">Apple</span>
+        <span class="trusted__logo">Tesla</span>
+        <span class="trusted__logo">Amazon</span>
+        <span class="trusted__logo">Netflix</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features" id="features">
+    <div class="features__container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Features</span>
+        <h2 class="section-title">Everything You Need.<br/><span class="gradient-text">Nothing You Don't.</span></h2>
+        <p class="section-desc">One card replaces hundreds of paper cards — and does infinitely more.</p>
+      </div>
+      <div class="features__grid">
+
+        <div class="feature-card feature-card--highlight" data-animate="fade-up">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="20" stroke="url(#feat1)" stroke-width="2"/>
+              <path d="M18 24C14.69 20.69 14.69 15.31 18 12" stroke="url(#feat1)" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M22 22C20.34 20.34 20.34 17.66 22 16" stroke="url(#feat1)" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="28" cy="20" r="3" fill="url(#feat1)"/>
+              <path d="M28 26C25.24 26 23 28.24 23 31H33C33 28.24 30.76 26 28 26Z" fill="url(#feat1)" fill-opacity="0.5"/>
+              <defs><linearGradient id="feat1" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Instant NFC Sharing</h3>
+          <p class="feature-card__desc">Tap your card on any smartphone to instantly share your full digital profile. Compatible with iPhone and Android — no app download required.</p>
+        </div>
+
+        <div class="feature-card" data-animate="fade-up" data-delay="100">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <rect x="8" y="6" width="32" height="36" rx="4" stroke="url(#feat2)" stroke-width="2"/>
+              <circle cx="24" cy="20" r="6" stroke="url(#feat2)" stroke-width="2"/>
+              <path d="M14 36C14 30.48 18.48 26 24 26C29.52 26 34 30.48 34 36" stroke="url(#feat2)" stroke-width="2" stroke-linecap="round"/>
+              <defs><linearGradient id="feat2" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Dynamic Profile</h3>
+          <p class="feature-card__desc">Update your info anytime — job title, phone, links, portfolio. Changes reflect instantly without reprinting.</p>
+        </div>
+
+        <div class="feature-card" data-animate="fade-up" data-delay="200">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <rect x="4" y="12" width="40" height="24" rx="4" stroke="url(#feat3)" stroke-width="2"/>
+              <path d="M4 20H44" stroke="url(#feat3)" stroke-width="2"/>
+              <rect x="8" y="28" width="12" height="4" rx="1" fill="url(#feat3)" fill-opacity="0.4"/>
+              <defs><linearGradient id="feat3" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Premium Build</h3>
+          <p class="feature-card__desc">Crafted from matte PVC with a silk-touch finish. Weighs just 5g — as thin as a standard credit card.</p>
+        </div>
+
+        <div class="feature-card" data-animate="fade-up" data-delay="0">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <rect x="6" y="6" width="16" height="16" rx="3" stroke="url(#feat4)" stroke-width="2"/>
+              <rect x="6" y="26" width="16" height="16" rx="3" stroke="url(#feat4)" stroke-width="2"/>
+              <rect x="26" y="6" width="16" height="16" rx="3" stroke="url(#feat4)" stroke-width="2"/>
+              <rect x="30" y="30" width="8" height="8" rx="2" fill="url(#feat4)"/>
+              <defs><linearGradient id="feat4" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">QR Code Backup</h3>
+          <p class="feature-card__desc">Every card includes a unique QR code — perfect for older phones or when you want to share from a distance.</p>
+        </div>
+
+        <div class="feature-card" data-animate="fade-up" data-delay="100">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M24 4L30 16H42L32 24L36 38L24 30L12 38L16 24L6 16H18L24 4Z" stroke="url(#feat5)" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M24 12L27 20H35L29 25L31 33L24 28L17 33L19 25L13 20H21L24 12Z" fill="url(#feat5)" fill-opacity="0.3"/>
+              <defs><linearGradient id="feat5" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Social Integration</h3>
+          <p class="feature-card__desc">Link LinkedIn, Instagram, X, TikTok, GitHub, Dribbble, and 20+ platforms directly to your card.</p>
+        </div>
+
+        <div class="feature-card" data-animate="fade-up" data-delay="200">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M24 44C35 44 44 35 44 24C44 13 35 4 24 4C13 4 4 13 4 24C4 35 13 44 24 44Z" stroke="url(#feat6)" stroke-width="2"/>
+              <path d="M24 4C18 12 18 36 24 44" stroke="url(#feat6)" stroke-width="2"/>
+              <path d="M24 4C30 12 30 36 24 44" stroke="url(#feat6)" stroke-width="2"/>
+              <path d="M6 18H42" stroke="url(#feat6)" stroke-width="2"/>
+              <path d="M6 30H42" stroke="url(#feat6)" stroke-width="2"/>
+              <defs><linearGradient id="feat6" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Works Worldwide</h3>
+          <p class="feature-card__desc">NFC is a universal standard. Your card works with 97% of smartphones manufactured after 2018.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="steps" id="how-it-works">
+    <div class="steps__container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">How It Works</span>
+        <h2 class="section-title">Three Steps.<br/><span class="gradient-text">Zero Friction.</span></h2>
+      </div>
+      <div class="steps__grid">
+        <div class="step" data-animate="fade-up">
+          <div class="step__number">01</div>
+          <div class="step__icon">
+            <svg viewBox="0 0 64 64" fill="none">
+              <rect x="16" y="4" width="32" height="56" rx="6" stroke="currentColor" stroke-width="2"/>
+              <rect x="20" y="10" width="24" height="38" rx="2" fill="currentColor" fill-opacity="0.08"/>
+              <circle cx="32" cy="54" r="3" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3 class="step__title">Tap Your Card</h3>
+          <p class="step__desc">Hold your TapLink card against the back of any NFC-enabled smartphone.</p>
+        </div>
+        <div class="step__connector" data-animate="fade-up">
+          <svg viewBox="0 0 100 20" fill="none"><path d="M0 10H90M90 10L80 4M90 10L80 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="step" data-animate="fade-up" data-delay="200">
+          <div class="step__number">02</div>
+          <div class="step__icon">
+            <svg viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="26" stroke="currentColor" stroke-width="2"/>
+              <path d="M22 32C18 28 18 20 22 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M28 30C26 28 26 24 28 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="36" cy="28" r="4" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="2"/>
+              <path d="M36 36C32 36 28 39 28 44H44C44 39 40 36 36 36Z" fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3 class="step__title">Profile Opens</h3>
+          <p class="step__desc">Your digital profile loads instantly in their browser — no app download required.</p>
+        </div>
+        <div class="step__connector" data-animate="fade-up">
+          <svg viewBox="0 0 100 20" fill="none"><path d="M0 10H90M90 10L80 4M90 10L80 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="step" data-animate="fade-up" data-delay="400">
+          <div class="step__number">03</div>
+          <div class="step__icon">
+            <svg viewBox="0 0 64 64" fill="none">
+              <path d="M32 8L8 20V44L32 56L56 44V20L32 8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M24 32L30 38L42 26" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="step__title">Connected!</h3>
+          <p class="step__desc">They save your contact, follow your socials, or visit your portfolio — all in one tap.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SHOWCASE ===== -->
+  <section class="showcase" id="showcase">
+    <div class="showcase__container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Showcase</span>
+        <h2 class="section-title">Designed to<br/><span class="gradient-text">Impress.</span></h2>
+        <p class="section-desc">Choose from classic matte black, pristine white, or holographic editions.</p>
+      </div>
+      <div class="showcase__cards" data-animate="fade-up">
+        <div class="showcase__card showcase__card--dark">
+          <div class="showcase__card-inner">
+            <div class="showcase__card-label">Midnight Black</div>
+            <div class="showcase__card-chip">
+              <svg viewBox="0 0 40 30" fill="none">
+                <rect x="1" y="1" width="38" height="28" rx="4" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="6" y="6" width="12" height="8" rx="1.5" fill="rgba(255,255,255,0.1)"/>
+              </svg>
+            </div>
+            <div class="showcase__card-name">TapLink</div>
+            <div class="showcase__card-nfc">NFC</div>
+          </div>
+        </div>
+        <div class="showcase__card showcase__card--white">
+          <div class="showcase__card-inner">
+            <div class="showcase__card-label">Arctic White</div>
+            <div class="showcase__card-chip">
+              <svg viewBox="0 0 40 30" fill="none">
+                <rect x="1" y="1" width="38" height="28" rx="4" stroke="rgba(0,0,0,0.15)" stroke-width="1"/>
+                <rect x="6" y="6" width="12" height="8" rx="1.5" fill="rgba(0,0,0,0.06)"/>
+              </svg>
+            </div>
+            <div class="showcase__card-name">TapLink</div>
+            <div class="showcase__card-nfc">NFC</div>
+          </div>
+        </div>
+        <div class="showcase__card showcase__card--holo">
+          <div class="showcase__card-inner">
+            <div class="showcase__card-label">Holographic</div>
+            <div class="showcase__card-chip">
+              <svg viewBox="0 0 40 30" fill="none">
+                <rect x="1" y="1" width="38" height="28" rx="4" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                <rect x="6" y="6" width="12" height="8" rx="1.5" fill="rgba(255,255,255,0.15)"/>
+              </svg>
+            </div>
+            <div class="showcase__card-name">TapLink</div>
+            <div class="showcase__card-nfc">NFC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials__container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Reviews</span>
+        <h2 class="section-title">Loved by<br/><span class="gradient-text">Thousands.</span></h2>
+      </div>
+      <div class="testimonials__grid" data-animate="fade-up">
+
+        <div class="testimonial">
+          <div class="testimonial__stars">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78L10 1z"/></svg>
+          </div>
+          <p class="testimonial__text">"I handed out 200 paper cards at a conference last year. This time I brought one TapLink card — and every single person saved my contact. Game changer."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">SM</div>
+            <div>
+              <strong>Sarah Mitchell</strong>
+              <span>Marketing Director</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial__stars">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78L10 1z"/></svg>
+          </div>
+          <p class="testimonial__text">"The build quality is insane for the price. Matte black finish, perfectly weighted. Clients always comment on it. Makes paper cards feel like fax machines."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">JK</div>
+            <div>
+              <strong>James Kim</strong>
+              <span>UX Designer at Stripe</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial__stars">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78L10 1z"/></svg>
+          </div>
+          <p class="testimonial__text">"I updated my profile 3 times since I bought it — new title, new phone, new website. Same card. That alone makes it worth every penny."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">RP</div>
+            <div>
+              <strong>Rachel Patel</strong>
+              <span>Freelance Developer</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="pricing" id="pricing">
+    <div class="pricing__container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Pricing</span>
+        <h2 class="section-title">One Card.<br/><span class="gradient-text">One Price. Forever.</span></h2>
+        <p class="section-desc">No subscriptions. No hidden fees. Buy once, use forever.</p>
+      </div>
+      <div class="pricing__grid" data-animate="fade-up">
+
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h3>Standard</h3>
+            <p>Perfect for individuals</p>
+          </div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">$19</span>
+            <span class="pricing-card__period">one-time</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              1 NFC Smart Card (Matte Black or White)
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Digital Profile Page
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              QR Code Backup
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Unlimited Profile Updates
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Up to 5 Social Links
+            </li>
+          </ul>
+          <a href="#" class="btn btn--outline btn--full">Choose Standard</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-card__badge">Most Popular</div>
+          <div class="pricing-card__header">
+            <h3>Pro</h3>
+            <p>For serious professionals</p>
+          </div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">$39</span>
+            <span class="pricing-card__period">one-time</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              1 NFC Smart Card (All Colors)
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Premium Profile Page + Custom Theme
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              QR Code Backup
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Unlimited Social Links
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Tap Analytics Dashboard
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Priority Support
+            </li>
+          </ul>
+          <a href="#" class="btn btn--primary btn--full">Choose Pro</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h3>Team</h3>
+            <p>For companies & agencies</p>
+          </div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">$29</span>
+            <span class="pricing-card__period">/card · min 5</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              5+ NFC Cards (Custom Branding)
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Team Admin Dashboard
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              All Pro Features
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              CRM Integration
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9L7.5 12.5L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Dedicated Account Manager
+            </li>
+          </ul>
+          <a href="#" class="btn btn--outline btn--full">Contact Sales</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta">
+    <div class="cta__container" data-animate="fade-up">
+      <div class="cta__glow"></div>
+      <h2 class="cta__title">Ready to Ditch Paper Cards?</h2>
+      <p class="cta__desc">Join 50,000+ professionals who network smarter with TapLink.</p>
+      <a href="#pricing" class="btn btn--white btn--lg">
+        Get Your TapLink Card
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo">
+            <svg class="nav__logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="url(#logo-grad2)" />
+              <path d="M10 16C10 12.6863 12.6863 10 16 10V10C19.3137 10 22 12.6863 22 16V22H16C12.6863 22 10 19.3137 10 16V16Z" fill="white" fill-opacity="0.9"/>
+              <circle cx="16" cy="12" r="2" fill="white" fill-opacity="0.6"/>
+              <defs>
+                <linearGradient id="logo-grad2" x1="0" y1="0" x2="32" y2="32">
+                  <stop stop-color="#6366f1"/>
+                  <stop offset="1" stop-color="#a855f7"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span>TapLink</span>
+          </a>
+          <p>The smartest way to share your identity.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Product</h4>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#showcase">Showcase</a>
+          </div>
+          <div class="footer__col">
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+          </div>
+          <div class="footer__col">
+            <h4>Support</h4>
+            <a href="#">Help Center</a>
+            <a href="#">Contact</a>
+            <a href="#">Shipping</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 TapLink. All rights reserved.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Twitter/X">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="6" r="1.5" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" stroke="currentColor" stroke-width="2"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
