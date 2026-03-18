@@ -2,6 +2,17 @@
    TapLink — Main JavaScript
    ================================================================ */
 
+// --------------- PDF Download ---------------
+
+import { generateContactCardPDF } from './pdf-generator.js';
+
+const downloadPdfBtn = document.getElementById('download-pdf-btn');
+if (downloadPdfBtn) {
+  downloadPdfBtn.addEventListener('click', () => {
+    generateContactCardPDF();
+  });
+}
+
 // --------------- Scroll-triggered animations ---------------
 
 const animateElements = document.querySelectorAll('[data-animate]');
