@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#1B5E20">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center_vertical" android:layout_marginBottom="24dp">
+            <ImageButton android:id="@+id/btnBack" android:layout_width="40dp" android:layout_height="40dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@android:drawable/ic_menu_revert" android:scaleType="centerInside"
+                android:contentDescription="Back" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/settings" android:textColor="@color/white"
+                android:textSize="24sp" android:textStyle="bold" android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <!-- Sound -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_dark" android:padding="16dp"
+            android:gravity="center_vertical" android:layout_marginBottom="12dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="@string/sound" android:textColor="@color/white" android:textSize="16sp" />
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swSound" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Vibration -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_dark" android:padding="16dp"
+            android:gravity="center_vertical" android:layout_marginBottom="12dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="@string/vibration" android:textColor="@color/white" android:textSize="16sp" />
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swVibration" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Grid -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_dark" android:padding="16dp"
+            android:gravity="center_vertical" android:layout_marginBottom="12dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="@string/grid_lines" android:textColor="@color/white" android:textSize="16sp" />
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swGrid" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Theme -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/theme_label" android:textColor="#A5D6A7" android:textSize="13sp"
+            android:textStyle="bold" android:layout_marginBottom="8dp" android:layout_marginTop="8dp" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="16dp">
+
+            <Button android:id="@+id/btnClassic" android:layout_width="0dp" android:layout_height="46dp"
+                android:layout_weight="1" android:text="@string/classic" android:textAllCaps="false"
+                android:textColor="@color/white" android:background="@drawable/bg_btn_secondary"
+                android:layout_marginEnd="6dp" android:textSize="13sp" />
+            <Button android:id="@+id/btnDark" android:layout_width="0dp" android:layout_height="46dp"
+                android:layout_weight="1" android:text="@string/dark" android:textAllCaps="false"
+                android:textColor="@color/white" android:background="@drawable/bg_btn_secondary"
+                android:layout_marginEnd="6dp" android:textSize="13sp" />
+            <Button android:id="@+id/btnNeon" android:layout_width="0dp" android:layout_height="46dp"
+                android:layout_weight="1" android:text="@string/neon" android:textAllCaps="false"
+                android:textColor="@color/white" android:background="@drawable/bg_btn_secondary"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

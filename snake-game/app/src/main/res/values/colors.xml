@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#4CAF50</color>
+    <color name="primary_dark">#388E3C</color>
+    <color name="accent">#FF9800</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="bg_menu">#1B5E20</color>
+    <color name="bg_menu_dark">#0A0A0A</color>
+    <color name="text_light">#E8F5E9</color>
+
+    <!-- Classic theme -->
+    <color name="classic_bg">#2E7D32</color>
+    <color name="classic_snake">#1B5E20</color>
+    <color name="classic_snake_head">#0D3B0F</color>
+    <color name="classic_food">#F44336</color>
+    <color name="classic_grid">#2A6E2E</color>
+
+    <!-- Dark theme -->
+    <color name="dark_bg">#121212</color>
+    <color name="dark_snake">#B0BEC5</color>
+    <color name="dark_snake_head">#ECEFF1</color>
+    <color name="dark_food">#FF5722</color>
+    <color name="dark_grid">#1E1E1E</color>
+
+    <!-- Neon theme -->
+    <color name="neon_bg">#0A0020</color>
+    <color name="neon_snake">#00E676</color>
+    <color name="neon_snake_head">#69F0AE</color>
+    <color name="neon_food">#FF1744</color>
+    <color name="neon_grid">#1A0040</color>
+</resources>
