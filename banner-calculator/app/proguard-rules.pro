@@ -1,4 +1,0 @@
--keepattributes *Annotation*
--keep class com.azizgraphics.clcltr.data.model.** { *; }
--keep class * extends androidx.room.RoomDatabase
--dontwarn javax.annotation.**
